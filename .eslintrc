@@ -29,11 +29,18 @@
   "settings": {
     "react": {
       "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "paths": ["./"]
+      }
     }
   },
   "rules": {
     "react/prop-types": 0,
     "no-console": 1,
+    "react/jsx-props-no-spreading": 0,
+    "react/destructuring-assignment": 0,
     "max-len": [1, 140, 2, { "ignoreComments": true }],
     "import/no-extraneous-dependencies": ["error", { "devDependencies": true }]
   }

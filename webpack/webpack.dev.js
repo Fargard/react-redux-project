@@ -10,6 +10,7 @@ module.exports = merge(baseConfig, {
     filename: '[name].js',
   },
   devServer: {
+    historyApiFallback: true,
     contentBase: path.resolve(__dirname, '../', 'dist'),
     compress: true,
     hot: true,
